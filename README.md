@@ -1,1 +1,8 @@
-This is my project that contains all the important files related to the application, Redhsfl. This application could be used to navigate the book shelf in pk kelkar library, for a given book ID.
+<p>This repository of my application <b>Red Shelf</b>. THe repository contains all the important files in uit's root directory. The the webpage that hosts the docuemntation to this website is in the folder named Documentatuion. You can also find the GLB model of PK kelkar library used in the project, href in this repository.</p>
+<p>
+  Link to the Documentation is given here : <a href="https://red-shelf.vercel.app/Documentation/index.html">Link to Documentation</a>
+</p>
+<p>
+  For more detials you can email me at : <a mailto:"arushc123@gmail.com">arushc123@gmail.com</a>
+</p>
+
