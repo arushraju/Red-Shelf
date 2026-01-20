@@ -3,6 +3,6 @@
   Link to the Documentation is given here : <a href="https://red-shelf.vercel.app/Documentation/index.html">Link to Documentation</a>
 </p>
 <p>
-  For more detials you can email me at : <a mailto:"arushc123@gmail.com">arushc123@gmail.com</a>
+  For more detials you can email me at : <a href="mailto:arushc123@gmail.com">arushc123@gmail.com</a>
 </p>
 
