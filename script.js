@@ -177,9 +177,6 @@ function onPointerMove( event ) {
                 if(selectedObject.name == "GSAP1"){
                     //console.log("Do what you want to with GSAP1");
                     animate_Selection(selectedObject,18,-0.5,1);
-                } else if(selectedObject.name == "GSAP2") {
-                    //console.log("Do what you want to with GSAP2");
-                    animate_Selection(selectedObject,13,-0.5,1);
                 } else if(selectedObject.name == "GSAP3") {
                     //console.log("Do what you want to with GSAP3");
                     animate_Selection(selectedObject,18,1,1);
@@ -192,9 +189,6 @@ function onPointerMove( event ) {
                 } else if(selectedObject.name == "GSAP6") {
                     //console.log("Do what you want to with GSAP6");
                     animate_Selection(selectedObject,20,-1,0);
-                } else if(selectedObject.name == "GSAP7") {
-                    //console.log("Do what you want to with GSAP7");
-                    animate_Selection(selectedObject,12,1,-1.5);
                 } else if(selectedObject.name == "GSAP8") {
                     //console.log("Do what you want to with GSAP8");
                     animate_Selection(selectedObject,18,+0.5,0);
