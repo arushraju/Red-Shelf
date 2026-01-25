@@ -189,8 +189,8 @@ document.querySelector(".back").addEventListener('click',()=>{
     
 
     //Reset the Controls
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.05;
+    //controls.enableDamping = true;
+    //controls.dampingFactor = 0.05;
     controls.screenSpacePanning = false;
     controls.enablePan = false;
     controls.minDistance = 0;
@@ -460,8 +460,8 @@ function init() {
 
     //controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
 
-    controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
-    controls.dampingFactor = 0.05;
+    //controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+    //controls.dampingFactor = 0.05;
 
     controls.screenSpacePanning = false;
 
