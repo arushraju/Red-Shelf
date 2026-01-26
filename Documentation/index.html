@@ -161,8 +161,8 @@
         <center>
             <img src="./Screenshots/Opacity.png" width="75%" alt=""><br>
         </center>
-        
-        
+        Another feature added was the use of <b>Geometry Instancing</b>. I thought this would not be required since there are no trees or models that need to be scattered, but then I quickly realised there are cycles. I had modelled each and every cycle initially, but then the size of the file reached 38 MB (>25 MB). So in order to bring it to 25 MB, I created a JSON file storing all the transformations of the instances of the cycle in it, and then used it to create the instance of the cycle in Three.js, saving me the memory of creating all the cycles individually. This has brought the size of the GLB file to 7 MB, which was a huge achievement.
+        I later used geometry instancing in the cycle stand and air conditioner as well to save some memory. But this was before realising that instancing the cycle itself had brought the mesh size well below 25 MB.
     </p>
     <p>
         Another feature I have added is that now the user could actually navigate itself to the bookshelf, and for that I used the GSAP locations placed inside the library to guide the user. I still had the feeling that this might be too complicated, since the user might not have much patience to tap onto each of the points and so on. But I will take a look at it some other time. Here are the pictures of me navigating myself to some bookshelf.<br>
