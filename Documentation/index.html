@@ -142,6 +142,7 @@
             <img src="./Screenshots/Web11.png" width="75%" alt="">
         </center>
     </p>
+    <hr>
     <h4><u>26/1/26</u></h4>
     <p>
         AA lot of work has been done in these five days and I am going to explain them one by one. The first and major feature is the search. I have successfully added the search feature into the application, wherein now it is possible to search for a bookshelf, and for a dummy shelf system I have numbered them from 1 to 36.
@@ -176,7 +177,7 @@
         I later used geometry instancing in the cycle stand and air conditioner as well to save some memory. But this was before realising that instancing the cycle itself had brought the mesh size well below 25 MB.
     </p>
     <p>
-        Another feature I have added is that now the user could actually navigate itself to the bookshelf, and for that I used the GSAP locations placed inside the library to guide the user. I still had the feeling that this might be too complicated, since the user might not have much patience to tap onto each of the points and so on. But I will take a look at it some other time. Here are the pictures of me navigating myself to some bookshelf.<br>
+       <br> Another feature I have added is that now the user could actually navigate itself to the bookshelf, and for that I used the GSAP locations placed inside the library to guide the user. I still had the feeling that this might be too complicated, since the user might not have much patience to tap onto each of the points and so on. But I will take a look at it some other time. Here are the pictures of me navigating myself to some bookshelf.<br><br>
         <center>
             <img src="./Screenshots/About_to_tap_location.png" alt="" width="75%">
             <img src="./Screenshots/First_Point.png" width="75%"><br>
@@ -191,7 +192,7 @@
         
     </p>
     <p>
-        Another feature that is added is the refresh button. So now that I have added the search, going into the GSAP mode and coming back, I don’t want there to be the search button, since there is already a book to be found. And also I don’t want the user to not have the option to search another book. Actually, I could have kept the search visible, but that would mean that the library could never come back to its opaque state after the first search was made, since every time the user comes back from the GSAP mode, it will make the library translucent. And since translucent would mean more parts of the mesh have to be rendered, this actually makes the application slower. Considering that this also has to be run on smaller devices, I had no other option but to give the chance for the application to again show the opaque library. But I will think about this problem.
+        <br>Another feature that is added is the refresh button. So now that I have added the search, going into the GSAP mode and coming back, I don’t want there to be the search button, since there is already a book to be found. And also I don’t want the user to not have the option to search another book. Actually, I could have kept the search visible, but that would mean that the library could never come back to its opaque state after the first search was made, since every time the user comes back from the GSAP mode, it will make the library translucent. And since translucent would mean more parts of the mesh have to be rendered, this actually makes the application slower. Considering that this also has to be run on smaller devices, I had no other option but to give the chance for the application to again show the opaque library. But I will think about this problem.
     </p>
     <p>
         And then finally, I would like to say that I have used the GSAP library a lot this time. Whether it is to change the opacity of the library, camera movement, or the movement of other HTML elements, all are animated using GSAP, which has made the work easier.
