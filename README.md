@@ -5,7 +5,7 @@
   <b>Documentation</b>.
   You will also find the GLB model of the PK Kelkar Library used in this project within this repository.
 </p>
-<img src="./Readme_Image.png"/>
+<img src="./Icon/Readme_Image.png"/>
 <p>
   Courtesy : <a href="https://pkklib.iitk.ac.in/index.php/about-us/gallery" target="_blank">P K Kelkar Library</a>
 </p>
