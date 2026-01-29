@@ -216,5 +216,19 @@
         </div><br>
         And now the controls might seem to be sudden, but it has definitely saved the application from lagging to some extend.
     </p>
+
+    <hr>
+    <h4><u>29/1/26</u></h4>
+    <p>
+        So the task for today is to make the camera face the right side. So the thing is, when a user clicks a GSAP location, he should be facing the next GSAP location. And this is the aim for today. I will have to change the location of the camera such that it faces the next GSAP when aiming at the target. Which means to play with the offset. The way I have done this is given in the following example:<br>
+        <pre><code>
+    if (selectedObject.name == "GSAP1") {
+        //console.log("Do what you want to with GSAP1");
+        animate_Selection(selectedObject, 18, -0.5, 1);
+    }
+        </code></pre>
+        This is one of such functions. So this function will make the camera move to the GSAP1 if it is selected. And the arguments that are passed to this function, i.e., 18, -0.5, 1, are the location of the camera w.r.t. the origin of the GSAP. In Blender, I have set the origin of these objects on the ground, much below the mesh, touching the ground. This will make scaling the GSAP look as if they are appearing from the ground. And having the z location equal to 18 will allow the camera to be above the origin, since I want the height of the camera to match the height of the eyes of a human. And the numbers -0.5 and 1 are the X and Y offset from the target, which I will be controlling for each GSAP now.
+    </p>
+
 </body>
 </html>
