@@ -361,9 +361,9 @@ function onPointerMove( event ) {
             } else if(selectedObject.name == "GSAP15") {
                 //console.log("Do what you want to with GSAP9");
                 if(ID >= 1 && ID <= 20){
-                    animate_Selection(selectedObject,17,0.5,0);
+                    animate_Selection(selectedObject,16,0.5,0);
                 } else if (ID > 20 && ID <=62){
-                    animate_Selection(selectedObject,17,-0.5,0);
+                    animate_Selection(selectedObject,16,-0.5,0);
                 }
                 
             } else if(selectedObject.name == "GSAP16") {
