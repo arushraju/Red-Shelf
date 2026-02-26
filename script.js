@@ -1291,7 +1291,7 @@ function init() {
 
     
     // world
-    loader.load( 'Color_Mesh.glb', function ( gltf ) {
+    loader.load( 'Mesh.glb', function ( gltf ) {
         model = gltf.scene;
         model.traverse((child) => {
             if (child.isMesh) {
