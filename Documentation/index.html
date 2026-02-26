@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Red Shelf</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Icon/bookstall-or-library-icon-in-red-and-blue-color-vector.png" sizes="32X32">
+
+    <style>
+        .charis-sil-regular {
+            font-family: "Charis SIL", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body{
+            padding-left: 10vw;
+            padding-right: 10vw;
+        }
+
+        img{
+            max-width: 500px;
+            max-height: 600px;
+        }
+    </style>
+</head>
+<body class="charis-sil-regular">
+    <center><h1><span style="color: red;">Red Shelf</span> Documentation</h1></center>
+    <center>
+        <figure>
+            <img src="./Screenshots/PK_Library.jpg" width="75%" alt="P. K. Kelkar Library">
+            <figcaption>
+                Courtesy: <a href="https://iitk.ac.in/dora/givingback/p-k-kelkar-library" target="_blank"> P. K. Kelkar Library</a>
+            </figcaption>
+        </figure>
+    </center>
+
+
+    
+    <p>
+        This project will involve creating a 3D catalog of the library, which will include a search engine for the library. Users will be able to visit the website and search for a book, and the system will show the exact location of the book on the library racks. This project will require the use of Three.js and JavaScript. I may also explore database management and use SQL to improve the website’s performance.
+    </p>
+    <p>
+        Interactive 3D Book Locator for P. K. Kelkar Library, IIT Kanpur
+        The Red Shelf is a web-based library navigation system designed to help users quickly locate physical books inside the large and complex layout of the P. K. Kelkar Library. Instead of relying only on shelf codes or floor numbers, the system provides a visual, spatial wayfinding experience using an interactive 3D model of the library.
+        Users search for a book by title, author, or identifier through a simple search interface. The backend queries catalog data and maps the book to its corresponding physical bookshelf. The frontend then displays a 3D model of the library, where the target bookshelf is dynamically highlighted in red, allowing users to visually understand the exact location of the book. This makes physical navigation faster, especially for new users and large collections.
+        The system is built using Three.js for real-time 3D visualization and Blender for modeling the library layout and shelves. A Node.js + Express backend handles search requests and data flow, while PostgreSQL is used to maintain a relational mapping between books and their physical shelf locations. The project is designed to integrate with the institute’s existing library catalog infrastructure and is optimized for use on mobile devices as well as desktops.
+        The Red Shelf focuses on clarity, usability, and performance rather than visual excess, ensuring that the experience remains lightweight and accessible. The project demonstrates the application of full-stack web development, database design, and 3D visualization to solve a real, campus-scale problem and is intended to be handed over as a functional tool for institutional use.
+    </p>
+    <hr>
+    <h2>Phases of this project</h2>
+    <p>
+        This project will be excuted in three phases. And they are as follows:<br>
+        <ol>
+            <li>
+                <b>Modelling: </b>I will have to build the model of this library, an dfor this I will first take many pictures of my own library. After whcih i will make the model in bledner. I will also take the pictures of my shelfs and there IDs. Names of the model in blender has to given carefully. FOr this phases I am giving myself three days. One day to get the refrences and setting up the idea, and the rest two days to model the whole library. This is schedules to be executed on 16th January to 18th January.
+            </li>
+            <li>
+                <b>Front-End</b> : This will not be the for the first time that i will be used thre js to make this. The Front-End of the website will be kept minimal. I will add the search bar where I will be aksing for the ID of each book. And thats it. So all that the front end will contain is the <b>Search bar</b>, and <b>Library model</b>, and also space for the title of this project. Along with the footer with links to this documentation, code, and also link to my personal website, damn it!
+            </li>
+            <li>
+                <b>Back-End : </b>This will be the tough part. The backend will be made in <b>node.js</b> and also <b>PostgreSQl</b>. node js tp send the query to databse, and PostgreSQl to retrieve the data from the database. This will be my first expereice with Database.
+                <br>
+                Once the location of the bookshelf is retirved, I will remove the search bar, make the library's opacity very low, and the bookshelf inside it will be made to appear somewhat dim, and then the bookshelf where you would find the book will be turned <b>Red</b>. Hence the name Red Shelf.
+            </li>
+        </ol>
+    </p>
+    <hr>
+    <h2>Phase 1: Modelling</h2>
+    <h4><u>16/1/26</u></h4>
+    <p>
+        I have just now came taking some pictures of the library. And the link to all the pictures of library is given below. And after seeing the library closely, which I haven't done even though I have visited it multiple times, I see that it's architecture is magnificent. The complexity, and unsymmetricity in the desing makes me wonder how could some one even imagine this. The architect of our library is <a target="_blank" href="https://en.wikipedia.org/wiki/Achyut_Kanvinde"><b>Achyut Kanvinde</b></a>. I don't have words to describe how great his work is. Truly Amaaazing a work and an Amaaazing Architect! I have linked all the downloadable pictures of the library that I will be using as reference, below.<br>
+        <center><a style="border: 5px solid black; padding: 2px;" href="./Media.zip">Download (700MB)</a></center>
+    </p>
+    <p>
+        From tommorrow onwards, I will start modelling the library. So the plan it to make the model as low poly as possilbe, and visit the library later on perfecting the model with small details. But I dont aim to have a perfect model ready by tomorrow.
+    </p>
+    <hr>
+    <h4><u>17/1/26</u></h4>
+    <p>
+        Ok so today, I got wasted. I am feeling very low from the start of this day. nothing seems to be working out. I am feeling very low. This might be the lowest poitn in my life. But I don't want to make this documentation a personal diary. So I will meet you tomorrow. And whether or not I start modelling will depend on my mood tomorrow.
+    </p>
+    <p>
+        Ok, so I tried making the library and I had gotten everything right, and as soon as the adrenaline rushed, my file got deleted due to Blender crashing. I got fucked up. This was very annoying. Hours of work got deleted instantly. I had almost completely made the entire outer part of the library before it fucked me.
+    </p>
+    <p>
+        Ok, so I put some more time in and made the model again. Now here are the results. As I proceed with the modeling, it becomes more and more easier, and more and more interesting. I have made more than what I expected.
+        Here are the images.<br>
+        <center>
+            <img src="./Screenshots/Back.png" width="75%">
+            <img src="./Screenshots/Joints.png" width="75%">
+            <img src="./Screenshots/Isometric.png" width="75%">
+            <img src="./Screenshots/Side.png" width="75%">
+            <img src="./Screenshots/Sides.png" width="75%">
+        </center><br>
+    </p>
+    <hr>
+    <h4><u>18/1/26</u></h4>
+    <p>
+        I am completely satisfied by today’s work. I have successfully made almost the entire exterior of our library, and now is the time when I will be building the interior, since that is why this application will be used. So today, I have completed the exterior except for the handles for the stairs and the staircase at the other side of the library. And apart from that, everything is done, along with the first implementation of Three.js. So with that, I will show some of the results that I have done today. I have also added an opening animation to make it look good, but haven’t added the search bar and the footer. I will be adding that in the next schedule.
+    </p>
+    <p>
+        <h4>Blender file</h4><br>
+        <center>
+            <img src="./Screenshots/Blend1.png" alt="" width="75%">
+            <img src="./Screenshots/Blend2.png" alt="" width="75%">
+            <img src="./Screenshots/Blender3.png" alt="" width="75%">
+            <img src="./Screenshots/Blend4.png" alt="" width="75%">
+        </center><br>
+        <h4>The Website (First Appearance)</h4><br>
+        <center>
+            <img src="./Screenshots/Web1.png" alt="" width="75%">
+            <img src="./Screenshots/Web2.png" alt="" width="75%">
+            <img src="./Screenshots/Web3.png" alt="" width="75%">
+            <img src="./Screenshots/Web4.png" alt="" width="75%">
+        </center><br>
+    </p>
+    <p>
+        So today, now that I have completely made the model and its website, next week I will work on perfecting the model and also working on the front end. So the task that is left is to make the frontend, which includes making the search bar and the footer, and also fixing the animation of the opening page of the website. And then the most important part is to name the shelves of the website. And then one thing I am thinking to do is use <b>GSAP</b> and make the user experience the interior of the library too. And this will give them an immersive experience to travel to the bookshelf. I will make the interior as minimal as possible.
+    </p>
+    <p>
+        So here is the flow. The user will click a start button and then he will see the website starting along with the animation. And then he will see the search bar, where he will put the ID of the book. And then after phase three of the project is completed, the user will see the bookshelf of that book turning red. So after that, the user has the option to use the GSAP method and actually travel along the path through the interior to get to the bookshelf. And once he clicks the first “flag,” he will be locked in the position of the camera, but he can rotate. And then he will click the next flag, and likewise he can travel to the bookshelf. So when he is locked in the GSAP, he will be allowed to go back to the normal view (global orbital), and during the GSAP mode, he will not be able to change the location of the camera, only the rotation. This will not allow the user to move into the mesh.
+    </p>
+    <hr>
+    <h4><u>19/1/26</u></h4>
+    <p>
+        So today,I have added the search bar which will take in the ID of the book, and have also added the footer, the headign of the app. GIven below is the picture of the application. I also fixed the footer to become responsive.<br>
+        <center>
+            <img src="./Screenshots/Web5.png">
+        </center>
+    </p>
+
+    <hr>
+    <h4><u>21/1/26</u></h4>
+    <p>
+        I have done a lot of work today. I successfully animated the camera using GSAP. I added red-colored location icons, and when they are clicked, the camera animates to those locations, allowing the user to explore the library from the inside. My aim is to build on this and allow the user to navigate all the way to the final bookshelf they are looking for. The GitHub repository has also been updated, and the application is now live. The app is hosted on Vercel. I usually host all frontend websites on Vercel and use Render for the backend—just a recommendation.
+        <center>
+            <img src="./Screenshots/Web6.png" width="75%" alt="">
+            <img src="./Screenshots/Web7.png" width="75%" alt="">
+            <img src="./Screenshots/Web8.png" width="75%" alt="">
+            <img src="./Screenshots/Web9.png" width="75%" alt="">
+            <img src="./Screenshots/Web10.png" width="75%" alt="">
+            <img src="./Screenshots/Web11.png" width="75%" alt="">
+        </center>
+    </p>
+
+    <hr>
+    <h4><u>26/1/26</u></h4>
+    <p>
+        AA lot of work has been done in these five days and I am going to explain them one by one. The first and major feature is the search. I have successfully added the search feature into the application, wherein now it is possible to search for a bookshelf, and for a dummy shelf system I have numbered them from 1 to 36.
+    </p>
+    <p>
+        So the way this is done is I have named the bookshelf such that it matches their actual names that will be used to make their color red in Three.js. And then when the search button is clicked, I make the bookshelf which was entered by the user red. The user will enter any number from 1 to 36, and so as soon as it submits the form, the bookshelf will be turned red, and also I make the whole library translucent. Now one issue I was getting was that even if the opacity was turning down, it was not making the mesh behind it visible. I was still unable to see the bookshelf behind the walls, and so I added these two lines.<br>
+        <div class="code" style="font-weight: 700; background-color: rgb(47, 47, 47); height: 200px; overflow-y: auto; overflow-x: auto; border: 1px solid black; color: aliceblue;">
+           <pre><code >
+    if (child.isMesh && child.name == 'Cube041') {
+        child.material.transparent = true;
+        
+        gsap.to(
+            child.material,
+            {
+                opacity : 0.5,
+                duration : 1,
+                onComplete : ()=>{
+                    child.material.depthTest = true;
+                    child.material.depthWrite = false;
+                }
+            }
+        )
+    }
+        </code></pre> 
+        </div>
+        And it worked. Given below is the image of the library turning its opacity down, and the searched bookshelf (2) is clearly visible.
+        <br>
+        <center>
+            <img src="./Screenshots/Opacity.png" width="75%" alt=""><br>
+        </center>
+        Another feature added was the use of <b>Geometry Instancing</b>. I thought this would not be required since there are no trees or models that need to be scattered, but then I quickly realised there are cycles. I had modelled each and every cycle initially, but then the size of the file reached 38 MB (>25 MB). So in order to bring it to 25 MB, I created a JSON file storing all the transformations of the instances of the cycle in it, and then used it to create the instance of the cycle in Three.js, saving me the memory of creating all the cycles individually. This has brought the size of the GLB file to 7 MB, which was a huge achievement.
+        I later used geometry instancing in the cycle stand and air conditioner as well to save some memory. But this was before realising that instancing the cycle itself had brought the mesh size well below 25 MB.
+    </p>
+    <p>
+       <br> Another feature I have added is that now the user could actually navigate itself to the bookshelf, and for that I used the GSAP locations placed inside the library to guide the user. I still had the feeling that this might be too complicated, since the user might not have much patience to tap onto each of the points and so on. But I will take a look at it some other time. Here are the pictures of me navigating myself to some bookshelf.<br><br>
+        <center>
+            <img src="./Screenshots/About_to_tap_location.png" alt="" width="75%">
+            <img src="./Screenshots/First_Point.png" width="75%"><br>
+            <img src="./Screenshots/Second_Point.png" width="75%"><br>
+            <img src="./Screenshots/Third_Point.png" width="75%"><br>
+            <img src="./Screenshots/Forth_Point.png" width="75%"><br>
+            <img src="./Screenshots/Fifth_Point.png" width="75%"><br>
+            <img src="./Screenshots/Seventh_Point.png" width="75%"><br>
+            <img src="./Screenshots/Eighth_Point.png" width="75%"><br>
+            <img src="./Screenshots/Ninth_Point.png" width="75%"><br>
+        </center>
+        
+    </p>
+    <p>
+        <br>Another feature that is added is the refresh button. So now that I have added the search, going into the GSAP mode and coming back, I don’t want there to be the search button, since there is already a book to be found. And also I don’t want the user to not have the option to search another book. Actually, I could have kept the search visible, but that would mean that the library could never come back to its opaque state after the first search was made, since every time the user comes back from the GSAP mode, it will make the library translucent. And since translucent would mean more parts of the mesh have to be rendered, this actually makes the application slower. Considering that this also has to be run on smaller devices, I had no other option but to give the chance for the application to again show the opaque library. But I will think about this problem.
+    </p>
+    <p>
+        And then finally, I would like to say that I have used the GSAP library a lot this time. Whether it is to change the opacity of the library, camera movement, or the movement of other HTML elements, all are animated using GSAP, which has made the work easier.
+    </p>
+    <p>
+        And lastly, I have seen that having the controls with damping, made the application slower. And my experience with the <a target="_blank" href="https://threejs.org/editor/">three.js editor</a> said me that it is better to have the orbital controls with no damping. And thus I disabled the damping.<br>
+        <div class="code" style="font-weight: 700; background-color: rgb(47, 47, 47); height: 200px; overflow-y: auto; overflow-x: auto; border: 1px solid black; color: aliceblue;">
+        <pre>
+            <code>
+    //Reset the Controls
+    //controls.enableDamping = true;
+    //controls.dampingFactor = 0.05;
+    controls.screenSpacePanning = false;
+    controls.enablePan = false;
+    controls.minDistance = 0;
+    controls.maxDistance = 900;
+    controls.maxPolarAngle = Math.PI / 2;
+            </code>
+        </pre>
+        </div><br>
+        And now the controls might seem to be sudden, but it has definitely saved the application from lagging to some extend.
+    </p>
+
+    <hr>
+    <h4><u>29/1/26</u></h4>
+    <p>
+        So the task for today is to make the camera face the right side. So the thing is, when a user clicks a GSAP location, he should be facing the next GSAP location. And this is the aim for today. I will have to change the location of the camera such that it faces the next GSAP when aiming at the target. Which means to play with the offset. The way I have done this is given in the following example:<br>
+        <div class="code" style="font-weight: 700; background-color: rgb(47, 47, 47); height: 200px; overflow-y: auto; overflow-x: auto; border: 1px solid black; color: aliceblue;">
+            <pre><code>
+    if (selectedObject.name == "GSAP1") {
+        //console.log("Do what you want to with GSAP1");
+        animate_Selection(selectedObject, 18, -0.5, 1);
+    }
+            </code></pre>
+        </div>
+        This is one of such functions. So this function will make the camera move to the GSAP1 if it is selected. And the arguments that are passed to this function, i.e., 18, -0.5, 1, are the location of the camera w.r.t. the origin of the GSAP. In Blender, I have set the origin of these objects on the ground, much below the mesh, touching the ground. This will make scaling the GSAP look as if they are appearing from the ground. And having the z location equal to 18 will allow the camera to be above the origin, since I want the height of the camera to match the height of the eyes of a human. And the numbers -0.5 and 1 are the X and Y offset from the target, which I will be controlling for each GSAP now.
+    </p>
+    <p>
+        I wish to make the loading page and the complete first floor today. This will increase the vertex count, and for that I will aim to make just the library transparent but not the rest of the assets, since that will make the app very slow otherwise.
+    </p>
+
+    <hr>
+    <h4>3/2/26</h4>
+    <p>
+        So today, and also some days ago, I have made even more responsive. And this time the icon of the app will change into the text when using ont he desktop and it changes into the icon when using on phone. <b>media query</b> is used to attain such response from the website. When I had the meeting last time, i was said to have some more feature. And here is the next step that i thought the website should implement. And that is to have a real time location indicatior, just like in the game of GTA. And the second thing to have is the percentage bar which tells the user how much percent of route he has covered. Lets keep it till there for now. And i will think about the rest of the feature later.
+    </p>
+    <p>
+        So the feature will be as follows. The user enters the location of the bookshelf, and then when it enables this 2D map feature, he/she will be able to see the projection of the library from the top view, and along with that he/she will see the red location like those rings of lights as in GTA, and this will also be reflected on the 2D map. And as the user reaches those points, he/she will be able to see the red point disappearing. This is very close to VR tech. Hopefully it works out.
+    </p>
+    <p>
+        As of now here are the updates:<br>
+        <center>
+           <figure>
+                <img src="./Screenshots/Desktop_heading_responsive.png" width="75%" alt="">
+                <img src="./Screenshots/Phone_heading_Icon_responsive.png" width="75%" alt="">
+                <figcaption>The app's icon/heading is now responsive, and can respond to the device that it is used in.</figcaption>
+            </figure>
+            <figure>
+                <img src="./Screenshots/Options.png" width="75%" alt="">
+                <figcaption>The options Menu</figcaption>
+            </figure> 
+        </center>
+        
+    </p>
+
+    <hr>
+    <h4>18/2/26</h4>
+    <p>
+        After a long time I have returned and added three major features in the app. One of them is still not complete. So the features (as I call them) are:<br>
+        <ol>
+            <li><b>Geo Location</b></li>
+            <li><b>Percentage Bar</b></li>
+            <li><b>Frustum Pop Ups</b></li>
+        </ol>
+        I understood many things in Three.js by implementing the Frustum and Geo-location. And I am going to discuss all that I have learnt in this part of the documentation.
+    </p>
+
+    <p>
+        <b>1. Geo-Location : </b><br>
+        This feature is like Google Maps, where the user will be able to see from the top where he is and where he has to go. This will allow the user to visually see where he is with respect to the nearby GSAP. But for now, I have seen that from the desktop where I am developing this app, the accuracy of the browser is about 186m, which is huge. But nevertheless, I will still implement this feature and see how useful it turns out to be. The figure below shows how the position coordinates are seen on the console using the Geolocation API.<br>
+        <figure>
+            <center>
+                <img src="./Screenshots/Geolocation.png" width="75%"/>
+            </center>
+           
+        </figure>
+    </p>
+
+    <p>
+        <b>2. Percentage Bar : </b>
+        This feature was not very hard, comparatively speaking. And this is inspired by how we all appeal to visuals of our progress. Be it a loading screen or any task that wants us to see how much we have done. So this idea came from that. This is somewhat hard coded till GSAP9, which is at the entrance of the front gate. The figure below shows how the progress bar changes its scale from 0 to 100% as the user moves to the respective bookshelf. After pressing the back button, the scale exactly turns to zero, and for the first GSAP it turns to 1%.<br>
+        <center>
+            <img src="./Screenshots/Percentage_1.png" width="75%"/>
+            <img src="./Screenshots/Percentage_2.png" width="75%"/><br>
+        </center><center>
+            <img src="./Screenshots/Percentage_3.png" width="75%"/>
+            <img src="./Screenshots/Percentage_4.png" width="75%"/><br>
+        </center><center>
+            <img src="./Screenshots/Percentage_5.png" width="75%"/>
+            <img src="./Screenshots/Percentage_7.png" width="75%"/><br>
+        </center><center>
+            <img src="./Screenshots/Percentage_8.png" width="75%"/>
+            <img src="./Screenshots/Percentage_9.png" width="75%"/><br>
+        </center><center>
+            <img src="./Screenshots/Percentage_10.png" width="75%"/>
+            <img src="./Screenshots/Percentage_11.png" width="75%"/>
+        </center> 
+    </p>
+
+    <p>
+        <b>3. Frustum : </b><br>
+        This is one of the coolest features I have found in Three.js. <a href="">Frustum</a> is the feature that could be used to see which object is completely in the screen. This allows me to use the coordinates of the object and project it onto the 2D screen, and then position the frustum pop up at the same location, giving the illusion that the pop up is actually attached to that object. This has to be one of the most important features in Three.js. Given below is the picture of the frustum working as expected.<br>
+        <center>
+            <img src="./Screenshots/Frustum_1.png" width="75%"/>
+            <img src="./Screenshots/Frustum_2.png" width="75%"/>
+        </center>
+    </p>
+
+    <hr>
+    <h4>22/2/26</h4>
+    <p>
+        Lately, I was thinking about some other ideas related to the website. I will now be listing them. 
+    </p>
+    <p>
+        The first plan is to use geometry instancing and make the bookshelves as instances. This will allow me to use the advantage of having a lesser number of meshes, and this will surely make the app faster and also give me the ability to change the properties of the mesh on the go. Also, with the help of <b>Geometry Instancing</b>, I will be able to make the target bookshelf more detailed, letting the user know in which row or which side of the shelf they can find the book.
+    </p>
+    <p>
+        And then the next thing to work on is adding a way to change the location of the bookshelf by the staff. That will make it easier for the admin to change the location of the bookshelf, change the name of the bookshelf, or just add or remove a bookshelf. Thinking about this, all that I have to do is give the admin the ability to change the JSON file that stores all the transforms.
+    </p>
+    <p>
+        And lastly, I have to say that adding the feature of <b>Frustum</b> was great, and I will surely add this feature of frustum extensively throughout the library. I have also thought of adding images of the library entrance to make it easier for the user to navigate themselves at the entrance of the library. Important locations like the dustbins and washrooms can also be marked, by red color if needed.
+    </p>
+    <p>
+        I am currently working on adding the bouncy pop-up feature, which will allow the user to see what’s the next pop-up to click from their current location. And I am also working on a cartoon version of the library, maybe to change the theme of the app. And for this, I am thinking of going with <b>Grease Pencil</b> in Blender.
+    </p>
+
+    <hr>
+    <h4>23/2/26</h4>
+    <p>
+        I have been seeing the reaction of the people when they use this app, and I have seen that they find it interesting, but with that I have also seen a common pattern in the users. After reaching the bookshelf, they tend to click the red shelf. And this means that something must happen when the user clicks the bookshelf. And then some said that the library must be colored. And some found it hard to find the search bar. Also, some found it hard to click on the Entrance GSAP.
+    </p> 
+    <p>
+        <ul>
+            <li>
+                Now the problem of people finding it hard to click on the first GSAP could be solved by creating a pop-up on the Entrance GSAP. And since clicking the pop-ups is simpler than the GSAP initially, when clicked I will ask the user if they want to go to that GSAP.
+            </li>
+            <li>
+                And when thinking about the color, I would like to add color to the library such that it is plain. And then on top of that I will add the grease pencil art. This would be killer.
+            </li>
+            <li>
+                And in the case of the search bar, I will make it more like how we see it in Google. With two semi-circles at the ends. And with a larger width. Making it easier for the user to identify it.
+            </li>
+            <li>
+                When the bookshelf is reached, I can show them pictures of the actual bookshelf maybe. And for this also I will use frustum.
+            </li>
+        </ul>
+        That’s it for now. I have an exam tomorrow and all the above problems will be solved by tomorrow, after the exam.
+    </p>
+    <p>
+        So here is the game plan.<br>
+        <center>
+            <table border="1">
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>24/2/26 (Day)</td>
+                    <td>
+                        <ul>
+                            <li>Extensive Frustum all over the library</li>
+                            <li>Entrance GSAP Frustum</li>
+                            <li>Bouncy Next GSAP</li>
+                            <li>Search Bar Design</li>
+                            <li>Bookshelf Pop Up</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>24/2/26 (Night)</td>
+                    <td>
+                        <ul>
+                            <li>Library Color and Grease Pencil Sketch</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </p>
+
+    <hr>
+    <h4>26/2/26</h4>
+    <p>It's 5 AM and I hvent slept. From yesterday onwards I have been working on addign features after feature and finally there are a hughe progress that i would like to share. Given below are the list of progress that i am going to discuss :</p>
+    <p>
+        <ol>
+            <li>Added colors to the mesh</li>
+            <li>Entrance Frustum Pop up</li>
+            <li>Developed the model even more.</li>
+            <li>Added Some more additional Frustum</li>
+            <li>Bouncing Next GSAP animation</li>
+            <li>Oultine Feature</li>
+        </ol>
+        Now lets go about each of them one by one.
+    </p>
+    <!--Colored Mesh-->
+    <p>
+        <b><u>Added Colors to the Mesh : </u></b><br>
+        It took me about three hours. I started adding <b>different coloring materials</b> in the scene. The materials were added to the library to make it look more accurate. And not just the color, but I also tried replicating the <b>roughness</b> of the mesh as much as possible. Given below is the model in Blender. You can see the dustbins and the glass materials, where the attribute of roughness being changed is clearly visible. <b>Shade Smooth</b> was applied to the dustbin and the cycle stand to make them look smoother rather than more like polygons.
+        
+        <center>
+            <img width="30%" src="./Screenshots/1/Cycle_Stand.png" alt="Image of Cycle Stand in Blender">
+            <img width="30%" src="./Screenshots/1/Cycle_Stand_2.png" alt="Image of Cycle Stand in Three.js">
+        </center><br>
+
+        <center>
+            <img width="30%" src="./Screenshots/1/Dustbin_1.png" alt="Image of Dustbin in Blender">
+            <img width="30%" src="./Screenshots/1/Dustbin_2.png" alt="Image of Dustbin in Three.js">
+        </center><br>
+
+        <center>
+            <img width="30%" src="./Screenshots/1/fence_1.png" alt="Image of Fence in Blender">
+            <img width="30%" src="./Screenshots/1/Fence_2.png" alt="Image of Fence in Three.js">
+        </center><br>
+
+        For some reason, I am able to see the shine on the dustbin, cycle stand, and also the fence at the front of the library, but I am unable to see the shine of the glass window when I import the model into Three.js as a GLB file.<br>
+        
+        <center>
+            <img width="30%" src="./Screenshots/1/glass_1.png" alt="Image of Glass in Blender"/>
+            <img width="30%" src="./Screenshots/1/Glass_2.png" alt="Image of Glass in Three.js">
+        </center><br>
+
+        And finally, here is the complete colored model in Blender and in Three.js (Red Shelf).<br>
+        
+        <center>
+            <img width="30%" src="./Screenshots/1/complte_color_1.png" alt="Image of model in Blender">
+            <img width="30%" src="./Screenshots/1/Complete_color_2.png" alt="Image of model in Three.js">
+        </center><br>
+
+        There was also a strange problem I faced. When joining two objects into one single mesh in Blender, if both objects had different materials, I noticed that the joined mesh becomes a group, and the individual children of the group become separate objects with just one specific material. Also, the names of the children are randomly assigned. I do not understand why this happens. I have somehow handled this in the code. Wherever I am required to work with the mesh of the complete library (which contains individual child meshes with particular colors), I use every child of the library to handle the logic.
+    </p>
+    <!--Entrance Frustum-->
+    <p>
+        <b><u>Entrance Frustum Pop Up</u></b><br>
+            In here I have used the concept of frustum and created an entrance frustum that makes it easier for the user to understand where to start. I understand that even though the model is made to replicate the actual library as much as possible, it is still possible that the user might be unable to find themselves inside the app. So for that, I have added these entrance pop-ups with actual pictures of those locations. This allows the user to understand exactly where to begin.<br><br>
+
+            While making this, I realized that having all four pop-ups appear at the same time would make it messy. So I used the coordinates of the camera to determine which side of the library the user is currently viewing. The Z-coordinate of the camera (which divides the library into two halves) decides which pop-ups should be shown. If the Z-coordinate is positive or negative, it determines whether the pop-ups on this side or the opposite side should be displayed.<br>
+
+            <center>
+                <img width="30%" src="./Screenshots/1/entrance_pop_up_1.png" alt="image of the pop ups from one side">
+                <img width="30%" src="./Screenshots/1/Entrance_pop_up_2.png" alt="image of the pop ups from the other side">
+            </center><br>
+
+            I also realized that if the pop-up is too large, it can cover almost the entire screen, especially on smaller devices. To handle this, I controlled the size of the pop-up depending on the zoom level of the camera. When fully zoomed in, the scale of the pop-up increases up to 1.5, and when completely zoomed out, it scales down to zero. The scale is then linearly interpolated for any given distance of the camera from the orbital controls target. I have also added he event listeners ont he pop up, so if the entrance pop isd very small, one can also click on the pop upmto go that respective GSAP.<br>
+
+            <center>
+                <img width="30%" src="./Screenshots/1/Entrance_pop_3.png" alt="image of the pop up being small">
+                <img width="30%" src="./Screenshots/1/Entrance_op_up_4.png" alt="image of the pop up being big when zoomed">
+            </center><br>
+
+            The origin of the scaling is also checked to prevent the pop-up from deviating from its location due to scaling offset. Similarly, additional adjustments were made to ensure the pop-up remains visually stable and aligned during interaction.
+    </p>
+
+    <!--Developed Mesh-->
+    <p>
+        <u><b>Developed Mesh :</b></u><br>
+        I have also developed the mesh connecting the first floor to the second floor and down to the ground floor. On the ground floor, I added the washroom section, the kiosk machine, and the reading room. For the tables, I used instancing.
+
+        <center> <img width="30%" src="./Screenshots/1/Gorund_Floor_Washrrom_1.png" alt="Ground floor with washroom in Blender"> <img width="30%" src="./Screenshots/1/Reading_Room_1.png" alt="Ground floor reading room in Blender"></center> 
+        <center> <img width="50%" src="./Screenshots/1/reading_room_2.png" alt="Ground floor reading room in Three.js"> </center><br>
+
+        Similarly, for the first floor, I used geometry instancing to create the tables. The glass door near the washroom side of the first floor has also been modeled. Both of them could be seen in the image beow<br>
+
+        <center> <img width="50%" src="./Screenshots/1/First_Floor_2.png" alt="Image of the glass door"> </center><br>
+
+        Finally, the second floor has also been created — not with many details yet, but enough to make it presentable.
+        <center><img width="30%" src="./Screenshots/1/Second_Floor_2.png" alt="Image of me beig at the second floor"><img width="30%" src="./Screenshots/1/Second_Floor_22.png" alt="mage of me beig at the second floor"></center>
+
+        Initially, I had IDs ranging from 1 to 62 to guide users to the bookshelves on the first floor. To allow exploration of the ground floor and the second floor, I added ID 63 for the reading room on the ground floor and ID 64 for the second floor. These are temporary IDs used for testing the application.
+    </p>
+
+    <!--Additional Frustum-->
+    <p>
+        <u><b>Additional Frustum :</b></u><br>
+        This is not the beginning. I am planning to add even more frustums along the way so that everything can be clearly defined and nothing remains under the hood. I have added the following frustums just to demonstrate the potential of this feature.<br>
+
+        <center><img width="50%" src="./Screenshots/1/Frustum_1.png" alt="image of the first set of frustum"></center><br> 
+        <center><img width="50%" src="./Screenshots/1/Frustum_2.png" alt="image of second set of frustum"></center><br> 
+        <center><img width="50%" src="./Screenshots/1/Frustum_3.png" alt="image of the third set of frustum"></center><br>
+
+        I would also like to note that this frustum feature sometimes fails on mobile phones but works completely fine on desktop. It might happen that the GSAP at the entrance of the library and the first one inside the library disconnect from each other (no back-and-forth traveling possible) when the frustum is turned on on a smartphone. However, this issue does not occur on desktop.
+    </p>
+
+    <!--Bouncy Next GSAP-->
+    <p> 
+        <u><b>Bouncy Next GSAP</b></u><br> 
+        This still requires some refinement, but it is working. It makes the NEXT GSAP bounce according to the ID entered, indicating which pop-up the user needs to click. This took quite a bit of time to implement, but in the code section, I will explain how I finally managed to do it. Here, I learned about <code>gsap.killTweensOf(div)</code>, which stops the GSAP animation that was previously applied. It is quite useful.<br>
+
+        With this, I also realized that it is not necessary to explicitly tell the user to click the GSAP. The entrance GSAP will naturally be clicked since the pop-ups are visible. However, to help the user identify the next GSAP, making it bouncy should be sufficient. I do not think anything more needs to be added to this feature in the future.<br>
+
+        Now to make this, I have actually mapped all the GSAP and have programmed the route, could be considered as hard coded. Given below is the image of the map<br>
+        <center><img width="50%" src="./Screenshots/1/next_GSAP.jpg" alt="map of the next gsap"></center>
+    </p>
+
+    <!--Oultine-->
+        <p> 
+            <u><b>Outline Feature :</b></u><br> This has to be one of the best things that happened while developing Red Shelf. I am using the outline function in Three.js, which creates a mesh outline through post-processing. Along with the added colors, it has made the app extremely beautiful, I would say. However, with the added benefit of the outline, I also noticed that it significantly slows down the application.
+
+            Because of this, I initially disabled the outline feature and instead provided an option to enable it. If a user feels their system has enough power to run the app smoothly without lag, they can turn it on. Shown below are some images of the library with the outline enabled.<br>
+
+            <center> <img width="50%" src="./Screenshots/1/outline_2.png" alt=""> <img width="50%" src="./Screenshots/1/oultine_22.png" alt=""><br> </center> 
+            <center> <img width="50%" src="./Screenshots/1/Outline_222.png" alt=""> <img width="50%" src="./Screenshots/1/Outline_2222.png" alt=""><br> </center> 
+        </p>
+
+    <hr>
+    <h4>1/3/26 (Conclusion)</h4>
+    <p>
+        About the journey of making <span style="color: red; font-weight: 700;">Red Shelf</span>
+    </p>
+</body>
+</html>
