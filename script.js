@@ -504,7 +504,7 @@ document.querySelector('.refresh').addEventListener('click',()=>{
 document.querySelector(".back").addEventListener('click',()=>{
 
     //I will first make the scale of target shelf to zero. And also set the target instance to be visible.
-    makeShelfRed(ID);
+    if(ID >= 1 && ID <= 62) makeShelfRed(ID);
     
     //After pressing the back button the opcaity of mesh must turn back to normal
     //console.log(ID);
