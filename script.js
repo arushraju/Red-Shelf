@@ -2063,7 +2063,7 @@ function init() {
     
     
     // Loading the World
-    loader.load( './Test/Mesh_Test.glb', function ( gltf ) {
+    loader.load( './Mesh_Test.glb', function ( gltf ) {
         model = gltf.scene;
         model.traverse((child) => {
             if (child.isMesh) {
