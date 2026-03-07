@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Shelf</title>
+    <link rel="stylesheet" href="./style_test.css"/>
+    <link rel="icon" href="./Icon/bookstall-or-library-icon-in-red-and-blue-color-vector.png" sizes="38x38"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"/>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@v0.182.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.182.0/examples/jsm/",
+                "gsap": "https://cdn.skypack.dev/gsap@3.10.4"
+            }
+        }
+    </script>
+
+</head>
+<body class="special-elite-regular">
+
+    <!--Loading Page-->
+    <div class="loading-page-container">
+        <div class="loading-page">
+            <h1 class="loading-text" style="color:rgb(139, 0, 0);">Loading...</h1>
+        </div>
+    </div>
+
+    <!--Heading-->
+    <div class="heading-container">
+        <div class="heading">
+            <a class="desktop-red-shelf" href="https://red-shelf.vercel.app/Documentation/index.html" target="_blank"><h1 class="the-heading">Red Shelf</h1></a>
+            <a class="phone-red-shelf" href="https://red-shelf.vercel.app/Documentation/index.html" target="_blank"><img class="the-icon" src="./Icon/bookstall-or-library-icon-in-red-and-blue-color-vector.png" alt=""></a><br>
+        </div>
+    </div>
+
+    <!--Title-->
+    <div class="title-container">
+        <div><h2><span class="title-content">Welcome to Red Shelf</span></h2></div>
+    </div>
+
+    <!--Menu-->
+    <div class="main-menu-container init">
+        <div class="main-menu">
+            <!--Hide the main menu-->
+            <div class="hide-main-menu">
+                <div class="hide-button">>>></div>
+            </div>
+
+            <!--[0] Explore Option-->
+            <div class="explore-option main-menu-option"><h2>1. Explore</h2></div>
+            <div class="explore-option-drop-box main-menu-drop-box init">
+                <!--[1] Explore Options Drop Box-->
+                <div class="explore-floor-option-container main-menu-option-drop-box init">
+                    <div class="sub-option ground-floor-display"><h3>1. Ground Floor<h3></h3></div>
+                    <div class="sub-option first-floor-display"><h3>2. First Floor</h3></div>
+                    <div class="sub-option second-floor-display"><h3>3. Second Floor</h3></div>
+                    <div class="sub-option floor-reset"><h3>4. Reset</div>
+                    <!--[1] Explore Options Back Button (Floor Mode)-->
+                    <div><button class="button-24 explore-floor-back-button"><h3>Back</h3></button></div>
+                </div>
+                
+
+                <!--[1.1] Explore Options Back Button (GSAP Mode)-->
+                <div class="explore-gsap-option-container main-menu-option-drop-box init">
+                    <div class="sub-option theme-option init"><h3>1. Theme</h3></div>
+                    <div class="sub-option frustum-option init"><h3>2. Frustum</h3></div>
+                    <div class="sub-option gsap-option init"><h3>3. GSAP</h3></div>
+                    <!--[1.1] Explore Options Back Button (GSAP Mode)-->
+                    <div><button class="button-24 explore-gsap-back-button"><h3>Back</h3></button></div>
+                </div>
+                
+            </div>
+
+            <!--[0] Search-->
+            <div class="search-option main-menu-option"><h2>2. Search</h2></div>
+            <div class="search-option-drop-box main-menu-drop-box init">
+
+                <!--[2]-->
+                <!--Search Options Drop Box-->
+                <div class="search-option-container main-menu-option-drop-box init">
+                    <div class="sub-option book-search-option"><h3>1. Books/Journals</h3></div>
+                    <div class="sub-option quick-search-option"><h3>2. Quick Search</h3></div>
+                    <div class="sub-option locate-manually-option"><h3>3. Locate Manually</h3></div>
+                    <!--Search Options Back Button (Floor Mode)-->
+                    <div><button class="button-24 search-back-button"><h3>Back</h3></button></div>
+                </div>
+
+                <!--[2.1] -->
+                <!--Books and Journal Search Bar-->
+                <div class="books-and-journals-search-container main-menu-option-drop-box form init">
+                    <form id="searchForm">
+                        <div><input class="search-bar" type="text" id="fname" name="fname" placeholder="Search Anything" required><br></div>
+                        <div><input type="submit" class="button-24" value="Search"></div>
+                    </form>
+                    <!--Books and Journals Back Button-->
+                    <div><button class="button-24 books-and-journals-back-button"><h3>Back</h3></button></div>
+                </div>
+                
+
+                <!--[2.2] -->
+                <!--Quick Search-->
+                <div class="quick-search-option-container main-menu-option-drop-box init">
+                    <div class="sub-option office-quick-search"><h3>1. Office</h3></div>
+                    <div class="sub-option exit-quick-search"><h3>2. Exit</h3></div>
+                    <div class="sub-option emergency-quick-search"><h3>3. Emergency</h3></div>
+                    <!--Quick Search Back Button-->
+                    <div><button class="button-24 quick-search-back-button"><h3>Back</h3></button></div>
+                </div>
+                
+
+                <!--[2.7]-->
+                <!--Specific Quick Search Floor-->
+                <div class="quick-search-floor-option-container main-menu-option-drop-box init">
+                    <div class="sub-option ground-floor-display"><h3>1. Ground Floor</h3></div>
+                    <div class="sub-option first-floor-display"><h3>2. First Floor</h3></div>
+                    <div class="sub-option second-floor-display"><h3>3. Second Floor</h3></div>
+                    <!--Quick Search Search Back Button (Floor Mode)-->
+                    <div><button class="button-24 quick-search-floor-back-button"><h3>Back</h3></button></div>
+                </div>
+                
+
+                <!--[2.3]-->
+                <!--Locate manually Search-->
+                <div class="locate-manually-search-option-container main-menu-option-drop-box init">
+                    <div class="sub-option ground-floor-display"><h3>1. Ground Floor</h3></div>
+                    <div class="sub-option first-floor-display"><h3>2. First Floor</h3></div>
+                    <div class="sub-option second-floor-display"><h3>3. Second Floor</h3></div>
+                    <!--locate-manually Search Back Button (Floor Mode)-->
+                    <div><button class="button-24 locate-manually-search-back-button"><h3>Back</h3></button></div>
+                </div>
+                
+
+                <!--[2.4]-->
+                <!--Choose the Starting Location-->
+                <div class="start-location-search-option-container main-menu-option-drop-box init">
+                    <div class="sub-option ground-floor-display"><h3>1. Ground Floor</h3></div>
+                    <div class="sub-option first-floor-display"><h3>2. First Floor</h3></div>
+                    <div class="sub-option second-floor-display"><h3>3. Second Floor</h3></div>
+                    <!--start-location Search Back Button (Floor Mode)-->
+                    <div><button class="button-24 start-location-search-back-button"><h3>Back</h3></button></div>
+                </div>
+                
+
+                <!--[2.5]-->
+                <div class="search-shown-option-container main-menu-option-drop-box init">
+                    <div class="sub-option ground-floor-display"><h3>1. Ground Floor</h3></div>
+                    <div class="sub-option first-floor-display"><h3>2. First Floor</h3></div>
+                    <div class="sub-option second-floor-display"><h3>3. Second Floor</h3></div>
+                    <!--Clear everything (Search Floor Mode)-->
+                    <div><button class="button-24 search-shown-clear-button"><h3>Clear</h3></button></div>
+                </div>
+                
+
+                <!--[2.6]-->
+                <!--Search GSAP Mode-->
+                
+                <!--Search GSAP Mode Back button-->
+                <div class="init"><button class="button-24 GSAP-search-shown-back-button"><h3>Back</h3></button></div>
+
+            </div>
+
+            <!--[0] Crowd Analytics-->
+            <div class="crowd-option main-menu-option"><h2>3. Crowd</h2></div>
+            <div class="crowd-option-drop-box main-menu-drop-box init">
+                <!--[3] Crowd Options Drop Box (Floor Mode)-->
+                <div class="crowd-floor-option-container init">
+                    <div class="sub-option ground-floor-display"><h3>1. Ground Floor</h3></div>
+                    <div class="sub-option first-floor-display"><h3>2. First Floor</h3></div>
+                    <div class="sub-option second-floor-display"><h3>3. Second Floor</h3></div>
+                </div>
+                <!--[3] Crowd Options Back Button (Floor Mode)-->
+                <div><button class="button-24 crowd-floor-back-button init"><h3>Back</h3></button></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Expand menu Button-->
+    <div class="expand-main-menu-container">
+        <div class="expand-main-menu">
+            <div class="expand-menu-icon">
+                <img src="./Icon/menu_Icon.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--Percentage Bar (GSAP_mode)-->
+    <div class="percentage init">
+        <div class="percentage-bar-container">
+            <!--Bookshelf Icon-->
+            <div class="bookshelf-icon"><!--<img src="./Icon/BookShelfIcon.png" alt="">--></div>
+            <!--Actual Transformable GSAP-->
+            <div class="percentage-bar-position"><div class="percentage-bar"></div></div>
+        </div>
+        <!--Add the GSAP icons on percentage-->
+        <div class="gsap-container">
+            <!--Destination icon-->
+            <div class="bookshelf-icon destination-icon"><img src="./Icon/BookShelfIcon.png" alt=""></div>
+            <!--Outer GSAP-->
+            <div class="outer-GSAP-icons-container">
+                <!-- <div class="outer-gsap"><div class="outer-gsap-image-position"><img src="./Icon/GSAP.png" alt=""></div></div> -->
+            </div>
+            <!--Inner GSAP-->
+            <div class="inner-GSAP-icons-container">
+                <!-- <div class="inner-gsap"><div class="inner-gsap-image-position"><img src="./Icon/GSAP.png" alt=""></div></div> -->
+            </div>
+        </div>
+    </div> 
+    
+    <!--Footer-->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="item_dash">
+                <a target="_blank" href="https://youtube.com"><img class="youtube logo" src="./Icon/question_mark-removebg-preview.png"/></a>
+            </div>
+            <div class="item_dash">
+                <a target="_blank" href="https://hi-arush.com"><img class="linkedin logo" src="./Icon/Arush_logo_black.PNG"/></a>
+            </div>
+            <div class="item_dash">
+                <a target="_blank" href="https://red-shelf.vercel.app/Documentation/index.html"><img class="github logo" src="./Icon/Documentation_Icon-removebg-preview.png"/></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Entrance Pop Up-->
+    <div class="pop-up-container entrance-pop-up-container">
+        <div id="Entrance_1-pop-up" class="pop-up">
+            <div class="heading-image"><img src="./Documentation/Screenshots/Entrance_1.jpg" alt="Image of the entrance 1"></div>
+            <!-- <div> Click below : <span><img src="./Documentation/Screenshots/GSAP.png" alt="image of the pop up"></span></div> -->
+        </div>
+        <div id="Entrance_2-pop-up" class="pop-up">
+            <div class="heading-image"><img src="./Documentation/Screenshots/Entrance_2.jpg" alt="Image of the entrance 1"></div>
+            <!-- <div> Click below : <span><img src="./Documentation/Screenshots/GSAP.png" alt="image of the pop up"></span></div> -->
+        </div>
+        <div id="Entrance_3-pop-up" class="pop-up">
+            <div class="heading-image"><img src="./Documentation/Screenshots/Entrance_3.jpg" alt="Image of the entrance 1"></div>
+            <!-- <div> Click below : <span class="font-image"><img src="./Documentation/Screenshots/GSAP.png" alt="image of the pop up"></span></div> -->
+        </div>
+        <div id="Entrance_4-pop-up" class="pop-up">
+            <div class="heading-image"><img src="./Documentation/Screenshots/Entrance_4.jpg" alt="Image of the entrance 1"></div>
+            <!-- <div> Click below : <span class="font-image"><img src="./Documentation/Screenshots/GSAP.png" alt="image of the pop up"></span></div> -->
+        </div>
+    </div>
+
+    <!--Pop up-->
+    <div class="pop-up-container">
+        <!--Ground Floor-->
+        <div id="stationary-pop-up" class="pop-up">
+            <div class="heading"><h1>Photocopy Facility</h1></div>
+            <div class="content"><p>Description about Photocopy Facility</p></div>
+            <div class="details"><a href="tel:+1234567890">Phone Number : 1234567890</a></div>
+        </div>
+        <div id="seminar-pop-up" class="pop-up">
+            <div class="heading"><h1>Seminar Room<h1></h1></div>
+            <div class="content"><p>Description about Seminar Room<p></p></div>
+            <div class="details"><a href="mailto:seminar@iitk.ac.in">Email : seminar@iitk.ac.in</a></div>
+        </div>
+        <div id="reception-pop-up" class="pop-up">
+            <div class="heading"><h1>Reception</h1></div>
+            <div class="content"><p>Could be used for issueing the book</p></div>
+            <div class="details"><a href='mailto:lib@iitk.ac.in'>Emial : lib@iitk.ac.in</a></div>
+        </div>
+        <div id="computer-pop-up" class="pop-up">
+            <div class="heading"><h1>Assistive computers</h1></div>
+            <div class="content"><p>Could be used to issue the book</p></div>
+            <div class="details"><a href='mailto:book@iitk.ac.in'>Email : book@iitk.ac.in</a></div>
+        </div>
+        <div id="kiosk-pop-up" class="pop-up">
+            <div class="heading"><h1>Kiosk Machine</h1></div>
+            <div class="content"><p>Could be used to return the book</p></div>
+            <div class="details"><a target="_blank" href='https://pkklib.iitk.ac.in/index.php/explore/facilities/kiosk-self-checkout'>Link to the Website</a></div>
+        </div>
+        <div id="drop-box-1-pop-up" class="pop-up">
+            <div class="heading"><h1>Drop-Box-1</h1></div>
+            <div class="content"><p>Used for so and so</p></div>
+            <div class="details"><a href=''>Link to the Website</a></div>
+        </div>
+        <div id="drop-box-2-pop-up" class="pop-up">
+            <div class="heading"><h1>Drop-Box-2</h1></div>
+            <div class="content"><p>Used for so and so</p></div>
+            <div class="details"><a href=''>Link to the Website</a></div>
+        </div>
+        <div id="security-pop-up" class="pop-up">
+            <div class="heading"><h1>Security</h1></div>
+            <div class="content"><p>Require Student ID to get in</p></div>
+            <div class="details"><a href=''></a></div>
+        </div>
+        <div id="Reading-Room-pop-up" class="pop-up">
+            <div class="heading"><h1>Reading Room</h1></div>
+            <div class="content"><p>Description about Reading Room</p></div>
+            <div class="details"><a href=''>Link to the Website</a></div>
+        </div>
+        <div id="Text-Books-Section-pop-up" class="pop-up">
+            <div class="heading"><h1>Text Books Section</h1></div>
+            <div class="content"><p>Description about Text Book Section</p></div>
+            <div class="details"><a href=''>Link to the Website</a></div>
+        </div>
+    </div>
+
+    <script src="./script_test.js" type="module"></script>
+    
+</body>
+</html>
