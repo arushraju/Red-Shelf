@@ -1775,7 +1775,7 @@ form.addEventListener('submit',async function (e){
  */
 async function getTargetBookshelf(ID){
     // URL of the XLSX file
-    const url = "../Book Shelf-Data.xlsx";
+    const url = "./Book Shelf-Data.xlsx";
 
     // Use the fetch API to retrieve the file
     return fetch(url)
