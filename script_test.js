@@ -1705,12 +1705,12 @@ form.addEventListener('submit',async function (e){
 /**
  * This is the real database that needs to be at the backend
  * This functino will take the ID of the book and will return the index of booklshef that needs to be highlighted. 
- * The code is taken from "https://medium.com/@me.mohamed.elnagar/working-with-xlsx-files-in-javascript-a-beginners-guide-b649a06de8fc"
+ * The code is taken from "https://medium.com/@me.mohamed.elnagar/working-with--files-in-javascript-a-beginners-guide-b649a06de8fc"
  * @param {ID} - This is the numeric form of the input (Book ID)
  */
 async function getTargetBookshelf(ID){
-    // URL of the XLSX file
-    const url = "../Book Shelf-Data.xlsx";
+    // URL of the  file
+    const url = "./Book Shelf-Data.";
 
     // Use the fetch API to retrieve the file
     return fetch(url)
