@@ -3656,6 +3656,7 @@ function init() {
     userControl = true;
     controls.enable = true;
     controls.maxPolarAngle = Math.PI / 2;
+    controls.enablePan = false;
     
 
 
