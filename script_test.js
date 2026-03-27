@@ -1992,7 +1992,7 @@ let subjects_ID = [];
 async function getSubjectBookshelf(subject_text){
     console.log(subject_text);
 
-    const url = '../Summary_of_DDC_23rd_edition.xlsx';
+    const url = './Summary_of_DDC_23rd_edition.xlsx';
 
     return fetch(url)
     .then(response => response.arrayBuffer())
@@ -2040,7 +2040,7 @@ async function getSubjectBookshelf(subject_text){
  */
 async function getTargetBookshelf(ID){
     // URL of the XLSX file
-    const url = "../Book Shelf-Data.xlsx";
+    const url = "./Book Shelf-Data.xlsx";
 
     // Use the fetch API to retrieve the file
     return fetch(url)
