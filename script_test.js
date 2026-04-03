@@ -28,7 +28,7 @@ import * as THREE from 'three';
 import * as XLSX from 'xlsx';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js'; //To render the outline
 import { DragControls } from 'three/addons/controls/DragControls.js';// To make the drag controls for the admin
 import { TransformControls } from 'three/addons/controls/TransformControls.js';
