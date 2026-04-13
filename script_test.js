@@ -1320,6 +1320,9 @@ document.querySelector('.admin-floor-back-button').addEventListener('click',()=>
         console.log('');
     });
 
+    //Make the gsap of the current floor to loose scale.
+    enlargeGSAP(model,current_floor,false,false);
+
     //Reset the camera
     resetCamera(camera,controls);
 
