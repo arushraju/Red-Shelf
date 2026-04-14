@@ -2917,6 +2917,9 @@ function onGsapSelectionStart(GSAP){
     //Update the Target
     const title_content = 'Path has been shown';
     document.querySelector('.title-content').textContent = title_content;
+
+    //I might even try ot directly go into the gspa mnode
+    onGsapSelectionLocationShown(GSAP);
 }
 
 //This varibale will be used to track if the last element in the path_gsap is gsap or not
