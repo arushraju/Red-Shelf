@@ -6,7 +6,7 @@
   You will also find the GLB model of the PK Kelkar Library used in this project within this repository.
 </p>
 <p>
-  The website for now uses CDN, which means that there is no need to download the modules. But to run the website locally then the website uses two modules and they are : <a href="https://threejs.org/manual/#en/installation">Three.js</a> and <a href="https://gsap.com/docs/v3/Installation/?tab=npm&module=esm&require=false">Gsap.js</a><br>
+  The website for now uses CDN, which means that there is no need to download the modules. But to run the website locally then the website uses two modules and they are : <a href="https://threejs.org/manual/#en/installation">Three.js</a> and <a href="https://gsap.com/docs/v3/Installation/?tab=npm&module=esm&require=false">GSAP</a><br>
   Or one can install the modules through node package managaer as shown below. (Node.js has to be installed before that)
   <pre><code>npm install three gsap</code></pre>
 </p>
