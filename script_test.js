@@ -7,7 +7,7 @@ import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js'; //To rend
 import { DragControls } from 'three/addons/controls/DragControls.js';// To make the drag controls for the admin
 import { TransformControls } from 'three/addons/controls/TransformControls.js';
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
-import { update_application } from "./helper_content.js";
+import { update_application } from "./Helper/helper_content.js";
 import { shownBookshelf , book_init } from './book.js'; //initiate this when turnign on the bookshelf search.
 
 
