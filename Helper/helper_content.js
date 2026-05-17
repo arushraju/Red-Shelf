@@ -281,7 +281,7 @@ const helper_content = {
             </div>
 
             <div>
-                <img src="./Helper/Selecting_Quick_Search_GSAP.gif" class="helper-gif"/>
+                <img src="./Helper/Selecting_Starting_Location.gif" class="helper-gif"/>
             </div>
         </div>
     `
