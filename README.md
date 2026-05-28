@@ -7,7 +7,7 @@
 </p>
 <p>
   The website for now uses CDN, which means that there is no need to download the modules. But to run the website locally two modules have to downloaded, and they are : <a href="https://threejs.org/manual/#en/installation">Three.js</a> and <a href="https://gsap.com/docs/v3/Installation/?tab=npm&module=esm&require=false">GSAP</a><br>
-  Or one can install the modules through node package managaer as shown below. (Node.js has to be installed before that)
+  Or one can install the modules through node package managaer as shown below. (Node.js has to be installed)
   <pre><code>npm install three gsap</code></pre>
 </p>
 <img src="./Icon/Readme_Image.png"/>
