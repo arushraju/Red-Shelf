@@ -569,6 +569,14 @@ canvas:active{
     padding: 1%;
     height: 80%;
 }
+/* .helper-image{
+    width: 100%;
+} */
+.pop-up-image{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
 .helper-flex{
     border: 1px solid black;
     background-color: #ffaeae;

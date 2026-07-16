@@ -1048,12 +1048,12 @@ document.querySelectorAll('.Admin-login-back-button').forEach((back)=>{
 //------------[4 to 4.1 or 0]-----------//
 
 // Arush's Databse
-// const URL = 'https://ucgglihqtekveakwhigf.supabase.co';      //DB URL
-// let KEY = 'sb_publishable_-3BA_lJu2juHcf_7ofpWOg_R_leY0aA';  //Publishable API key
+const URL = 'https://ucgglihqtekveakwhigf.supabase.co';      //DB URL
+let KEY = 'sb_publishable_-3BA_lJu2juHcf_7ofpWOg_R_leY0aA';  //Publishable API key
 
 // Vikas Yadhav's Database
-const URL = 'https://nrrjzukeugjqumyattwy.supabase.co';     // DB URL
-let KEY = 'sb_publishable_Oqn6IKjTF4fGtwBv5wuBCQ_RAYP8Yqc'; // Publishable API key
+//const URL = 'https://nrrjzukeugjqumyattwy.supabase.co';     // DB URL
+//let KEY = 'sb_publishable_Oqn6IKjTF4fGtwBv5wuBCQ_RAYP8Yqc'; // Publishable API key
 
 //Connect the API of the database
 const supabase = createClient(URL, KEY);
@@ -2377,6 +2377,7 @@ function addBookshelfPopup(bookshelf_array){
             document.querySelector('.pop-up-heading-text').textContent = `Bookshelf Number : ${bookshelf_array[i]}`;
             document.querySelector('.pop-up-content-text').textContent = `This is the content of ${bookshelf_array[i]}`;
             document.querySelector('.pop-up-image').src = ``;
+            document.querySelector('.pop-up-link').href = ``;
 
             //And then make the pop up to appear
             document.querySelector('.help-pop-up-position').style.display = 'flex';
@@ -3384,7 +3385,11 @@ async function createFrustumInfo(){
                 //Make the frustum pop up to appear
                 document.querySelector('.pop-up-heading-text').textContent = `${data[i].frustum_heading}`;
                 document.querySelector('.pop-up-content-text').textContent = `${data[i].frustum_content}`;
-                //document.querySelector('.pop-up-image').src = `${data[i].frustum_image_url}`;
+                if(data[i].frustum_image_url){
+                    document.querySelector('.pop-up-image').style.display = 'flex';
+                    document.querySelector('.pop-up-image').src = `${data[i].frustum_image_url}`;
+                } else document.querySelector('.pop-up-image').style.display = 'none';
+                
 
                 //And then make the pop up to appear
                 document.querySelector('.help-pop-up-position').style.display = 'flex';
@@ -4106,6 +4111,14 @@ function init() {
     scene_light = init_lights();
 
     window.addEventListener( 'resize', onWindowResize );
+
+    //Update the application number
+    if(tellApplicationFlow() !== 2){
+        previuos_application_flow = application_flow;
+        application_flow = 2;
+    }
+    //Make the Main Search Box to open
+    document.querySelector('.search-option-container').style.display = 'flex';
 
 }
 
