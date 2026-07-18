@@ -87,7 +87,7 @@
             /* border: 1px solid black; */
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: start;
         }
         .footer-item a:hover{
             transition-duration: 0.5s;
@@ -223,7 +223,7 @@
         <div class="option-flex">
             <div class="option intro-button">Intro</div>
             <div class="option devlog-button">DevLog</div>
-            <div class="option codedoc-button">CodeDoc</div>
+            <!-- <div class="option codedoc-button">CodeDoc</div> -->
             <div class="option future-button">Future</div>
             
         </div>
@@ -248,7 +248,7 @@
             <div class="card">
                 <div class="card-heading">What does <span class="heading special-elite-regular" style="color: red;">Red Shelf</span> do?</div>
                 <div class="card-content">
-                    Say you want to know where the book you are searching for is. This application is an attempt to solve this problem. It does have some other functionalities, but making it easier to navigate to the right bookshelf was the main objective behind creating Red Shelf. However, I believe that now the website is not necessarily just for bookshelves.
+                    Say you want to know where the book you are searching for is. This application is an attempt to solve that problem. It does have some other functionalities, but making it easier to navigate to the right bookshelf was the main objective behind creating Red Shelf. However, I believe that the website is now much more than searching books.
                 </div>
             </div>
 
@@ -275,7 +275,7 @@
                 <div class="card-heading">Where can I find it?</div>
                 <div class="card-content">
                     <p>
-                        I assume you came to this documentation after visiting <a href="../index.html" target="_blank">the website</a>. When I was building this project, I used <a href="https://vercel.com" target="_blank">Vercel</a> to host it. The website is now part of the <a href="https://pkklib.iitk.ac.in/" target="_blank">P K Kelkar Library</a>. The database is hosted using <a href="https://supabase.com" target="_blank">Supabase</a>.
+                        I assume you came to this documentation after visiting the <a href="../index.html" target="_blank">website</a>. When I was building this project, I used <a href="https://vercel.com" target="_blank">Vercel</a> to host it. The website is now part of the <a href="https://pkklib.iitk.ac.in/" target="_blank">P K Kelkar Library</a>. The database is hosted using <a href="https://supabase.com" target="_blank">Supabase</a>.
                     </p>
                 </div>
             </div>
@@ -1665,16 +1665,16 @@
     </div>
 
     <!--Code Doc-->
-    <div class="codedoc-container content">
+    <!-- <div class="codedoc-container content">
         <p>
             Technical Documentation of the code will soon be available.
         </p>
-    </div>
+    </div> -->
 
     <!--Future-->
     <div class="future-container content">
         <p>
-            Future Plans about the project will soon be available.
+            This will be updated soon.
         </p>
     </div>
         
@@ -1687,7 +1687,7 @@
         const intro = document.querySelector('.intro-button');
 
         const devlog_content = document.querySelector('.flex-horizontal');
-        const codedoc_content = document.querySelector('.codedoc-container');
+        //const codedoc_content = document.querySelector('.codedoc-container');
         const future_content = document.querySelector('.future-container');
         const intro_content = document.querySelector('.intro-container')
 
@@ -1696,7 +1696,7 @@
         function init(){
             intro_content.style.display = 'block';
             devlog_content.style.display = 'none';
-            codedoc_content.style.display = 'none';
+            // codedoc_content.style.display = 'none';
             future_content.style.display = 'none';
             document.querySelector('.brackets').textContent = "(Introduction)";
             current = intro_content;
@@ -1718,14 +1718,14 @@
             current = devlog_content;
         });
 
-        codeDoc.addEventListener('click',()=>{
-            window.scrollTo({top : 0})
-            current.style.display = 'none';
-            console.log(`Now the Current is going to make the `)
-            codedoc_content.style.display = 'block';
-            document.querySelector('.brackets').textContent = '(Code Documetation)';
-            current = codedoc_content;
-        });
+        // codeDoc.addEventListener('click',()=>{
+        //     window.scrollTo({top : 0})
+        //     current.style.display = 'none';
+        //     console.log(`Now the Current is going to make the `)
+        //     codedoc_content.style.display = 'block';
+        //     document.querySelector('.brackets').textContent = '(Code Documetation)';
+        //     current = codedoc_content;
+        // });
 
         future.addEventListener('click',()=>{
             window.scrollTo({top : 0})
