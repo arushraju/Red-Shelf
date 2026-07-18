@@ -320,6 +320,7 @@ canvas:active{
     height: 50px;
     border: 1px solid black;
     margin-top: 2%;
+    display: none;
 }
 .expand-menu-icon:hover{
     background-color: rgba(112, 0, 0, 0.658);
@@ -921,6 +922,7 @@ canvas:active{
         height: 35px;
         cursor: pointer;
         border: 1px solid black;
+        display: none;
     }
     .frustum-icon{
         width: 35px;

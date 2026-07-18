@@ -1571,7 +1571,8 @@ async function updateTransformClicked(clicked_object){
 //----------------  EVENT LISTENERS  ------------------------//
 
 //hide menu button
-let isMenuOpen = false;
+let isMenuOpen = true;
+document.querySelector('.expand-menu-icon').display = 'none';
 //Main menu will be hidden after entering the application
 document.querySelector('.expand-menu-icon').addEventListener('click',()=>{
     //if the menu is hidden
@@ -1618,6 +1619,9 @@ document.querySelector('.cross').addEventListener('click',()=>{
 
     //And enable the raycaster
     isRaycasterEnabled = true;
+
+    //Make the image of the pop up to disappear.
+    document.querySelector('.pop-up-image').display = 'none';
 });
 
 // Eventlistener to add the helping pop up
@@ -1886,7 +1890,8 @@ document.querySelector('.explore-gsap-back-button').addEventListener('click',()=
 })
 
 //---------- [0 to 2] -------------//
-document.querySelector('.search-option').addEventListener('click',()=>{
+
+function main_menu_to_search_click(){
     //Update the application number
     if(tellApplicationFlow() !== 2){
         previuos_application_flow = application_flow;
@@ -1905,7 +1910,8 @@ document.querySelector('.search-option').addEventListener('click',()=>{
 
     //Update the Helper
     update_application(application_flow);
-});
+}
+document.querySelector('.search-option').addEventListener('click',main_menu_to_search_click);
 
 //--------- [2 to 0]---------------//
 document.querySelector('.search-back-button').addEventListener('click',()=>{
@@ -1932,7 +1938,8 @@ document.querySelector('.search-back-button').addEventListener('click',()=>{
 })
 
 //---------- [2 to 2.1] -----------//
-document.querySelector('.book-search-option').addEventListener('click',()=>{
+//Function to open the search bar directly. This is added after my discussion with the staff on 14-07-2026
+function main_search_to_book_search(){
     //Update the application number
     if(tellApplicationFlow() !== 2.1){
         previuos_application_flow = application_flow;
@@ -1945,7 +1952,8 @@ document.querySelector('.book-search-option').addEventListener('click',()=>{
 
     //Update the Helper
     update_application(application_flow);
-});
+}
+document.querySelector('.book-search-option').addEventListener('click',main_search_to_book_search);
 
 //-------------- [2 to 2.2] -------------//
 document.querySelector('.quick-search-option').addEventListener('click',()=>{
@@ -3972,7 +3980,6 @@ function init() {
 
     scene = new THREE.Scene();
 
-
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -4112,14 +4119,10 @@ function init() {
 
     window.addEventListener( 'resize', onWindowResize );
 
-    //Update the application number
-    if(tellApplicationFlow() !== 2){
-        previuos_application_flow = application_flow;
-        application_flow = 2;
-    }
-    //Make the Main Search Box to open
-    document.querySelector('.search-option-container').style.display = 'flex';
-
+    //First go from 0 to 2
+    main_menu_to_search_click();
+    //Then go from 2 to 2.1
+    main_search_to_book_search();
 }
 
 //------------  OTHERS  -----------------//
