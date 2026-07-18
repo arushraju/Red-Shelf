@@ -4,18 +4,18 @@ const helper_heading = {
     "1"     : {heading : "Explore (Floor Mode) - Red Shelf"},
     "1.1"   : {heading : "Explore (GSAP Mode) - Red Shelf"},
     "2"     : {heading : "Search Menu - Red Shelf"},
-    "2.1"   : {heading : "Shelf Search (Subject / Call Number) - Red Shelf"},
+    "2.1"   : {heading : "Shelf Search - Red Shelf"},
     "2.2"   : {heading : "Quick Search Menu - Red Shelf"},
-    "2.8"   : {heading : "Shelf Selection (Click Destination GSAP) - Red Shelf"},
-    "2.3"   : {heading : "Choose Destination (Click Destination GSAP) - Red Shelf"},
-    "2.7"   : {heading : "Choose Destination (Click Destination GSAP) - Red Shelf"},
-    "2.4"   : {heading : "Choose Start (Click Start GSAP) - Red Shelf"},
-    "2.5"   : {heading : "Path Calculated (Click on any GSAP) - Red Shelf"},
+    "2.8"   : {heading : "Shelf Selection - Red Shelf"},
+    "2.3"   : {heading : "Choose Destination - Red Shelf"},
+    "2.7"   : {heading : "Choose Destination - Red Shelf"},
+    "2.4"   : {heading : "Choose Start - Red Shelf"},
+    "2.5"   : {heading : "Path Calculated - Red Shelf"},
     "2.6"   : {heading : "Click the next GSAP - Red Shelf"},
     "3"     : {heading : "Miscellaneous (Incomplete) - Red Shelf"},
     "3.2"   : {heading : "Port Vacancy (Incomplete) - Red Shelf"},
     "3.1"   : {heading : "Table Vacancy (Incomplete) - Red Shelf"},
-    "3.3"   : {heading : "Fan to Swtich Mapping (Incomplete) - Red Shelf"},
+    "3.3"   : {heading : "Fan-Swtich Mapping (Incomplete) - Red Shelf"},
     "4.1"   : {heading : "Admin Menu - Red Shelf"},
     "4.2"   : {heading : "Frustum Settings - Red Shelf"},
     "4.3"   : {heading : "Transform / Bookshelf Settings - Red Shelf"},
@@ -86,6 +86,10 @@ const helper_content = {
 
             <div><img class="helper-gif" src="./Helper/Help_Button.gif"/></div>
         </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
+        </div>
     `
 },
 
@@ -119,6 +123,10 @@ const helper_content = {
 
             <div><img class="helper-gif" src="./Helper/Frustum_Option_Edxplore_Floor_Mode.gif"/></div>
         </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
+        </div>
     `
 },
 
@@ -150,6 +158,10 @@ const helper_content = {
             </div>
 
             <div><img class="helper-gif" src="./Helper/GSAP_Disable_Explore_mode.gif"/></div>
+        </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
         </div>
     `
 },
@@ -184,6 +196,10 @@ const helper_content = {
                 </ul>
             </div>
         </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
+        </div>
     `
 },
 
@@ -192,7 +208,7 @@ const helper_content = {
         <div class="helper-flex">
             <div>
                 Search for a shelf using the Call Number of a book.
-                Each call number corresponds to a unique bookshelf.
+                Each call number corresponds to a unique bookshelf. Please click the question mark at bottom left for any help at any point.
                 <br><br>
                 Example: Call Number <b>234.234</b>
             </div>
@@ -205,10 +221,14 @@ const helper_content = {
         <div class="helper-flex">
             <div>
                 Search shelves based on book subjects.
-                Multiple bookshelves may exist for a single subject.
+                Multiple bookshelves may exist for a single subject. Please click the question mark at bottom left for any help at any point.
             </div>
 
             <div><img class="helper-gif" src="./Helper/Searching_through_subjects.gif"/></div>
+        </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
         </div>
     `
 },
@@ -225,6 +245,10 @@ const helper_content = {
                 <img src="./Helper/Quick_Search_Selecting_Dustbin.gif" class="helper-gif"/>
             </div>
         </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
+        </div>
     `
 },
 
@@ -239,6 +263,10 @@ const helper_content = {
             <div>
                 <img src="./Helper/Selecting_GSAP_Subejctws.gif" class="helper-gif"/>
             </div>
+        </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
         </div>
     `
 },
@@ -255,6 +283,10 @@ const helper_content = {
                 <img src="./Helper/Manually_Select_The_Destination.gif" class="helper-gif"/>
             </div>
         </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
+        </div>
     `
 },
 
@@ -270,6 +302,10 @@ const helper_content = {
                 <img src="./Helper/Selecting_Quick_Search_GSAP.gif" class="helper-gif"/>
             </div>
         </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
+        </div>
     `
 },
 
@@ -284,15 +320,26 @@ const helper_content = {
                 <img src="./Helper/Selecting_Starting_Location.gif" class="helper-gif"/>
             </div>
         </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
+        </div>
     `
 },
 
 "2.5": {
     content: `
+    <div class="helper-flex">
+
+    </div>
         <p>
             The path between the starting location and destination is now displayed.
             You may click on any GSAP point on any floor to walk through the path interactively.
         </p>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
+        </div>
     `
 },
 
@@ -307,6 +354,10 @@ const helper_content = {
             <div>
                 <img src="./Helper/Move_to_shelf.gif" class="helper-gif"/>
             </div>
+        </div>
+
+        <div class="helper-flex">
+            <div>Link to the documentation : <a target="_blank" href="https://red-shelf.vercel.app/Documentation/">Redshelf</a></div>
         </div>
     `
 },
