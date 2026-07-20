@@ -1,4 +1,3 @@
-<h1>Introduction</h1>
 <p>
   This repository contains the source code for my application <b style="color:red">Red Shelf</b>.
   It includes all the essential project files located in the root directory.
@@ -15,15 +14,6 @@
 <p>
   Courtesy : <a href="https://pkklib.iitk.ac.in/index.php/about-us/gallery" target="_blank">P K Kelkar Library</a>
 </p>
-
-<br><hr>
-<h1>Usecase</h1>
-It could be used for the following:
-<ul>
-  <li>Get to the right bookshelf from the subject and call number of book</li>
-  <li>Search for rooms, dustbins, washrooms, and many more</li>
-  <li>Explore the library and its infra</li>
-</ul>
 <p>
   The documentation for the project is available here:
   <a href="https://red-shelf.vercel.app/Documentation/index.html">View Documentation</a>
