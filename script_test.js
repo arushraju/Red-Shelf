@@ -2320,6 +2320,12 @@ form.addEventListener('submit',async function (e){
         loading_page.style.display = 'block';
         document.querySelector('.loading-text').textContent = 'Loading Bookshelf...';
         [bookshelf,target_gsap] = await getTargetBookshelf(ID);
+
+        //If the bookshelf is invalid
+        if(![bookshelf,target_gsap]){
+            return;
+        }
+
         // Return the side of the bookshelf
         bookshelf_side = await getBookshelfSide(ID);
         loading_page.style.display = 'none';
