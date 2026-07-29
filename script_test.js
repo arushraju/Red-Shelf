@@ -2521,7 +2521,12 @@ async function getTargetBookshelf(ID){
         }
     }
 
-    alert('Bookshelf not found');
+    document.querySelector('.loading-text').textContent = 'Invalid Search';
+    loading_page.style.display = 'none';
+    //Reset the search and change the placeholder
+    document.querySelector('.search-bar').value = '';
+    document.querySelector('.search-bar').placeholder = `No Result: ${ID}`;
+
     return null;
 }
 
