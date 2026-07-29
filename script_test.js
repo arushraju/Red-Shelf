@@ -1948,7 +1948,7 @@ function main_search_to_book_search(){
 
     //Reset the search and change the placeholder
     document.querySelector('.search-bar').value = '';
-    document.querySelector('.search-bar').placeholder = `No Result: ${ID}`;
+    document.querySelector('.search-bar').placeholder = `Search Call No./Sub`;
 
 
     //Make the search container [2.1]
