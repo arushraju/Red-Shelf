@@ -2283,6 +2283,17 @@ form.addEventListener('submit',async function (e){
 
         bookshelf_array_temp = await getSubjectBookshelf(ID);
 
+        //If the searched bookshelf is wrong 
+        if(!bookshelf_array_temp){
+            document.querySelector('.loading-text').textContent = 'Invalid Search';
+            loading_page.style.display = 'none';
+            //Reset the search and change the placeholder
+            document.querySelector('.search-bar').value = '';
+            document.querySelector('.search-bar').placeholder = `No Result: ${ID}`;
+
+            return;
+        }
+
         //And then I add the pop up of this bookshelf describing about it.
         addBookshelfPopup(bookshelf_array_temp);
         
@@ -2426,10 +2437,10 @@ async function getSubjectBookshelf(subject_text){
     if(error1 || error2){
         console.error('Subject fetch error:', error1);
         console.error('Bookshelf fetch error:', error2);
-        return;
+        return null;
     } else if (!data_subject || data_subject.length == 0){
         console.log('No Bookshelves for this Search');
-        return;
+        return null;
     } else {
 
         //Update the UI
@@ -2557,7 +2568,10 @@ document.querySelector('.subject-search-shown-clear-button').addEventListener('c
     //Make all the GSAP to the scale 1
     first_floor_bookshelf_gsap_objects.forEach((child)=>{
         gsap.to(child.scale,{x : 0,y : 0,z : 0});
-    })
+    });
+
+    //Reset the Placeholder
+    document.querySelector('.search-bar').placeholder = `Search Call No./Sub`;
 
     previuos_application_flow = 2.8;
     
@@ -2695,6 +2709,9 @@ document.querySelector('.start-location-search-back-button').addEventListener('c
 
     //Make the UI of [2.4] to disappear
     document.querySelector('.start-location-search-option-container').style.display = 'none'; // [2.4]
+
+    //Update the Placeholder
+    document.querySelector('.search-bar').placeholder = `Search Call No./Sub`;
 
     let title_content;
 
