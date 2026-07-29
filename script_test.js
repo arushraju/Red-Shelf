@@ -1946,6 +1946,11 @@ function main_search_to_book_search(){
         application_flow = 2.1;
     }
 
+    //Reset the search and change the placeholder
+    document.querySelector('.search-bar').value = '';
+    document.querySelector('.search-bar').placeholder = `No Result: ${ID}`;
+
+
     //Make the search container [2.1]
     document.querySelector('.books-and-journals-search-container').style.display = 'flex';
     document.querySelector('.search-option-container').style.display = 'none';
