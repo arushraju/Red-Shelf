@@ -2306,6 +2306,16 @@ form.addEventListener('submit',async function (e){
         console.log('This is number');
         ID = Number(ID);
 
+        //Search for the invalid call number.
+        if(ID < 0){
+            document.querySelector('.loading-text').textContent = 'Invalid Search';
+            loading_page.style.display = 'none';
+            //Reset the search and change the placeholder
+            document.querySelector('.search-bar').value = '';
+            document.querySelector('.search-bar').placeholder = `No Result: ${ID}`;
+            return;
+        }
+
         //Update the application flow
         if(tellApplicationFlow() !== 2.4){
             previuos_application_flow = application_flow;
@@ -2319,12 +2329,10 @@ form.addEventListener('submit',async function (e){
         //This will return the bookshelf and it's target GSAP
         loading_page.style.display = 'block';
         document.querySelector('.loading-text').textContent = 'Loading Bookshelf...';
-        [bookshelf,target_gsap] = await getTargetBookshelf(ID);
 
-        //If the bookshelf is invalid
-        if(![bookshelf,target_gsap]){
-            return;
-        }
+        
+
+        [bookshelf,target_gsap] = await getTargetBookshelf(ID);
 
         // Return the side of the bookshelf
         bookshelf_side = await getBookshelfSide(ID);
@@ -2527,11 +2535,7 @@ async function getTargetBookshelf(ID){
         }
     }
 
-    document.querySelector('.loading-text').textContent = 'Invalid Search';
-    loading_page.style.display = 'none';
-    //Reset the search and change the placeholder
-    document.querySelector('.search-bar').value = '';
-    document.querySelector('.search-bar').placeholder = `No Result: ${ID}`;
+
 
     return null;
 }
